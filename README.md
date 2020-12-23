@@ -6,7 +6,7 @@ First you must provide the certificates used for TLS, in this solution we are us
 
 # Certificate locations
 
-LetsEncrypt certificates have to be located in the `./certs` directory. Possible modifications have to be addressed in `docker-compose.yml` accordingly.
+LetsEncrypt certificates have to be located in the `../certs` directory (parent of main code folder). Possible modifications have to be addressed in `docker-compose.yml` accordingly.
 
 # Generate Passwords File
 
