@@ -6,10 +6,11 @@ First you must provide the certificates used for TLS, in this solution we are us
 
 # Certificate locations
 
-LetsEncrypt certificates have to be located in the `../certs` directory (parent of main code folder). Possible modifications have to be addressed in `docker-compose.yml` accordingly.
+In this configuration, LetsEncrypt certificates are stored in the `../certs` directory (parent of main code folder). Possible modifications have to be addressed in `docker-compose.yml` accordingly.
 
 # Generate Passwords File
 
+Once Docker is running, mosquitto user(s) and corresponding passwords have to be defined using the docker run command from ssh.
 `docker run -it --rm -v $pwd/config:/mosquitto/config eclipse-mosquitto mosquitto_passwd -c /mosquitto/config/passwords.txt <username>`
 
 to add more users change `-c` to `-b`
