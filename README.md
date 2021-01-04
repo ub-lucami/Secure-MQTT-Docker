@@ -11,6 +11,7 @@ In this configuration, LetsEncrypt certificates are stored in the `../certs` dir
 # Generate Passwords File
 
 Once Docker is running, mosquitto user(s) and corresponding passwords have to be defined using the docker run command from ssh.
+
 `docker run -it --rm -v $pwd/config:/mosquitto/config eclipse-mosquitto mosquitto_passwd -c /mosquitto/config/passwords.txt <username>`
 
 to add more users change `-c` to `-b`
